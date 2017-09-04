@@ -3,9 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+/*
+directiva Highlight: De esta manera Angular reconoce la directiva cuando se encuentra en la plantilla a myHighlight.
+*/
+import { HighlightDirective } from './highlight.directive';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule
@@ -14,3 +20,5 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
